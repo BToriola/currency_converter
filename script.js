@@ -14,6 +14,10 @@ function convertCurrency() {
                     var result = xmlhttp.responseText;
                     alert(result);                   
                     var jsonObj = JSON.parse(result);
+                    var oneUnit = jsonObj[toCurrency]/jsonObj[fromCurrency];
+                    var amt = document.getElementById('fromAmount').value;
+                    document.getElementById('toAmount').value = oneUnit * amt;
+
                     
                    
                 }
