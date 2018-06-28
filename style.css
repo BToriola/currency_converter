@@ -1,0 +1,27 @@
+body{
+    margin: 0 auto;
+}
+
+main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        border: 4px solid;
+}
+.input{
+    margin:5px 2px;
+}
+.select1{
+    background-color: aquamarine;
+    padding: 10px;
+}
+.select2{
+    background-color: brown;
+    padding: 10px;
+}
+input{
+    padding: 10px; 
+}
