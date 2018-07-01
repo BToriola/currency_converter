@@ -10,16 +10,14 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body onload="convertCurrency();">
+<body>
     <main>
         <header>
             <h1>Currency Converter</h1>
         </header>
-        <table>
-            <tr>
-                <td>
+       
         <div class="input">
-            <input type="number" id = "fromAmount" value="1" onkeyup="convertCurrency();">
+            <input type="number" id = "fromAmount" onchange="convertCurrency();">
             <select name="" id="fromCurrency" class="select1" onchange="convertCurrency();">
                 <option value="USD" selected="selected">United States Dollars</option>
                 <option value="EUR">Euro</option>
@@ -64,7 +62,6 @@
                 <option value="LBP">Lebanon Pounds</option>
                 <option value="LUF">Luxembourg Francs</option>
                 <option value="MYR">Malaysia Ringgit</option>
-                <option value="MXP">Mexico Pesos</option>
                 <option value="NLG">Netherlands Guilders</option>
                 <option value="NZD">New Zealand Dollars</option>
                 <option value="NOK">Norway Kroner</option>
@@ -101,15 +98,9 @@
                 <option value="XPD">Palladium Ounces</option>
                 <option value="XPT">Platinum Ounces</option>
             </select>
-        </div>
-    </td>
-    </tr>
-    <tr>
-        <td>
-        <div class="output">
-            <input type="number" id="toAmount">
-            <select name="" id="toCurrency" class="select2" onchange="convertCurrency()">
-                <option value="MXP" selected="selected">Mexico Pesos</option>
+        
+        <select name="" id="toCurrency" class="select2" onchange="convertCurrency();">
+                <option value="EUR" selected="selected">Euro</option>
                 <option value="EUR">Euro</option>
                 <option value="GBP">United Kingdom Pounds</option>
                 <option value="DZD">Algeria Dinars</option>
@@ -189,15 +180,16 @@
                 <option value="XPD">Palladium Ounces</option>
                 <option value="XPT">Platinum Ounces</option>
             </select>
-        </td>
-        </tr>
-        </table>
         </div>
-        <div id="result">
-
+        <hr/>
+        <div class="output" > RESULT:
+            <input  id="toAmount" type ="number" disabled>
         </div>
+      
     </main>
+    <script src= "sw.js"></script>
    <script src="script.js"></script>
+
 
 </body>
 

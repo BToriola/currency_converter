@@ -25,3 +25,7 @@ main{
 input{
     padding: 10px; 
 }
+#output {
+
+    margin-top:20px;
+}
